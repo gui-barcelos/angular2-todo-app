@@ -1,0 +1,15 @@
+<header>
+  <nav>
+    <button md-raised-button [routerLink]="['home']">Home</button>
+    <button md-raised-button [routerLink]="['about']">About</button>
+    <button md-raised-button [routerLink]="['todo']">Todo</button>
+  </nav>
+</header>
+<main layout>
+  <h1>Hello from {{title}}!</h1>
+  <!-- Images (and assets) are parsed and loaded from within the public directory -->
+  <img src="/img/angular.png">
+  <router-outlet></router-outlet>
+</main>
+<footer>
+</footer>

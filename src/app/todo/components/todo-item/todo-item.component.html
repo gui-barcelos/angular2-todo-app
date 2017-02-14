@@ -1,0 +1,8 @@
+<md-checkbox (click)="toggle(todo.id)" 
+                [checked]="todo.complete" 
+                [class.completed]="todo.complete">
+    {{todo.title}}
+</md-checkbox>
+<button md-mini-fab (click)="remove(todo.id)">
+          <md-icon class="md-24">delete</md-icon>
+</button>

@@ -1,0 +1,7 @@
+<div>
+    <md-list>
+        <md-list-item *ngFor="let todo of todos">
+            <app-todo-item [item]="todo" (onRemove)="remove($id)" (onToggle)="toggle($id)"></app-todo-item>
+        </md-list-item>
+    </md-list>
+</div>
